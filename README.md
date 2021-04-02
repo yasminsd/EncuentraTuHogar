@@ -30,8 +30,8 @@ Descripción lógica de las entidades:
 
 
 
-Integrante:
-Nombre: Yasmin
-Apellidos: Shekh Liébana
-E-mail: y.shekh@alumnos.urjc.es
+Integrante:  
+Nombre: Yasmin  
+Apellidos: Shekh Liébana  
+E-mail: y.shekh@alumnos.urjc.es  
 Git: https://github.com/yasminsd/SD_Hotel
