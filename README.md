@@ -1,14 +1,14 @@
 # SD_Hotel
 Aplicación Web de reservas de habitaciones, servicios y gestión de cobros en SD_Hotel.
-/n Parte pública:
+#Parte pública:
 - Habitaciones disponibles y precios SD_Hotel.
 - Servicios disponibles y precios SD_Hotel.
-Parte provada:
+#Parte privada:
 - Registro de usuarios y viajeros.
 - Reserva de habitaciones.
 - Reserva de servicios.
 - Cobro reservas y servicios utilizados por el viajero.
-Descripción lógica de las entidades:
+#Descripción lógica de las entidades:
 - Viajero
    - Almacena los datos del viajero.
 - Usuario
