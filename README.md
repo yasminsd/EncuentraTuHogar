@@ -29,7 +29,15 @@ Descripción lógica de las entidades:
    - Esta entidad almacena el abono realizado por el viajero.
 
 Integrante:
+
+
 Nombre: Yasmin
+
+
 Apellidos: Shekh Liébana
+
+
 E-mail: y.shekh@alumnos.urjc.es
+
+
 Git: https://github.com/yasminsd/SD_Hotel
