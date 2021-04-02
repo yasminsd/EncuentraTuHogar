@@ -1,6 +1,6 @@
 # SD_Hotel
 Aplicación Web de reservas de habitaciones, servicios y gestión de cobros en SD_Hotel.
-Parte pública:
+/n Parte pública:
 - Habitaciones disponibles y precios SD_Hotel.
 - Servicios disponibles y precios SD_Hotel.
 Parte provada:
