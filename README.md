@@ -27,3 +27,9 @@ Descripción lógica de las entidades:
    - Almacena los datos que tiene relación con los servicios que ofrece el hotel y su valor correspondiente.
 - Pago:
    - Esta entidad almacena el abono realizado por el viajero.
+
+Integrante:
+Nombre: Yasmin
+Apellidos: Shekh Liébana
+E-mail: y.shekh@alumnos.urjc.es
+Git: https://github.com/yasminsd/SD_Hotel
