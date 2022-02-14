@@ -1,32 +1,19 @@
-# SD_Hotel
-Aplicación Web de reservas de habitaciones, servicios y gestión de cobros en SD_Hotel.
-
-
-Parte pública:
-- Habitaciones disponibles y precios SD_Hotel.
-- Servicios disponibles y precios SD_Hotel.
-
-
-Parte privada:
-- Registro de usuarios y viajeros.
-- Reserva de habitaciones.
-- Reserva de servicios.
-- Cobro reservas y servicios utilizados por el viajero.
+# Encuentra_Tu_Hogar
+Aplicación Web de compra/venta de casas.
 
 
 Descripción lógica de las entidades:
-- Viajero
-   - Almacena los datos del viajero.
+- Administrador
+   - Esta entidad almacena los datos de los usuarios gestionando su alta y baja del sistema.
 - Usuario
-   - Esta entidad posee los datos relevantes que debe poseer un usuario registrado en el sistema. 
-- Reserva
-   - Almacena los datos que tienen relación con las reservas para la gestión de disponibilidad de habitaciones.
-- Habitación
-   - Esta entidad es la más importante, ya que todas las demás entidades giran y tienen relación con respecto a ella.
-- Servicios
-   - Almacena los datos que tiene relación con los servicios que ofrece el hotel y su valor correspondiente.
-- Pago:
-   - Esta entidad almacena el abono realizado por el viajero.
+   - Esta entidad posee los datos relevantes que debe poseer un usuario registrado en el sistema para poder realizar una compra o una venta de una casa.
+- Compra
+   - Almacena los datos que tienen relación con la compra de una casa.
+- Venta
+   - Almacena los datos que tienen relación con la venta de una casa.
+- Casa
+   - Almacena los datos que tiene relación con todas las casas.
+
 
 
 
@@ -34,4 +21,4 @@ Integrante:
 Nombre: Yasmin  
 Apellidos: Shekh Liébana  
 E-mail: y.shekh@alumnos.urjc.es  
-Git: https://github.com/yasminsd/SD_Hotel
+Git: https://github.com/yasminsd/Encuentra_Tu_Hogar
