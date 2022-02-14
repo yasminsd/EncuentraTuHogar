@@ -21,4 +21,6 @@ Integrante:
 Nombre: Yasmin  
 Apellidos: Shekh Liébana  
 E-mail: y.shekh@alumnos.urjc.es  
-Git: https://github.com/yasminsd/Encuentra_Tu_Hogar Tablero Trello: https://trello.com/encuentra_tu_hogar
+Tablero Trello: https://trello.com/encuentra_tu_hogar
+Git: https://github.com/yasminsd/Encuentra_Tu_Hogar 
+Tablero Trello: https://trello.com/encuentra_tu_hogar
