@@ -1,4 +1,4 @@
-# Encuentra_Tu_Hogar
+# EncuentraTuHogar
 Aplicación Web de compra/venta de casas.
 
 
