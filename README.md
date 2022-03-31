@@ -1,4 +1,5 @@
 # EncuentraTuHogar
+# Fase 1
 Aplicación Web de compra/venta de casas.
 
 
@@ -16,7 +17,6 @@ Descripción lógica de las entidades:
 
 
 
-
 Integrante:  
 Nombre: Yasmin  
 Apellidos: Shekh Liébana  
@@ -25,7 +25,7 @@ Git: https://github.com/yasminsd/EncuentraTuHogar
 Tablero Trello: https://trello.com/encuentra_tu_hogar 
 
 
-Fase 2  
+# Fase 2
 Diagrama de clases UML  
 <img src="images/DiagramaUML.png" height="500" alt="images"/>  
 Diagrama Entidad/Relación  
@@ -48,11 +48,25 @@ Ejecutamos el archivo jar ubicado en la carpeta target de nuestro proyecto y la 
 Para comprobar que la base de datos MySQL se ha conectado con Spring Boot he utilizado la aplicación MySQL Workbench versión 8.0:   
 <img src="images/MySQLWotkbench.png" height="300" alt="images"/>   
 Con esta aplicación, he comprobado si la aplicación Spring Boot se conectaba o no a la basae de datos de MySQL visualizando las tablas generadas:  
-<img src="images/TablaUsuario.png" height="300" alt="images"/>   
-<img src="images/TablaAnuncio.png" height="300" alt="images"/>   
-<img src="images/TablaCasa.png" height="300" alt="images"/>   
-<img src="images/TablaCompra.png" height="300" alt="images"/>   
-<img src="images/TablaVenta.png" height="300" alt="images"/> 
+Tabla Usuario  
+
+<img src="images/TablaUsuario.png" height="300" alt="images"/>  
+Tabla Anuncio  
+
+<img src="images/TablaAnuncio.png" height="300" alt="images"/>  
+Tabla Casa  
+
+<img src="images/TablaCasa.png" height="300" alt="images"/>  
+Tabla Compra  
+
+<img src="images/TablaCompra.png" height="300" alt="images"/>  
+Tabla Venta  
+
+<img src="images/TablaVenta.png" height="300" alt="images"/>  
+
+Otra herramienta que he utilizado, sobre todo al principio, es Postman con la que podemos realizar las operaciones CRUD (Crear,Leer, Actualizar y Borrar) sobre las bases de datos relacionales y comprobar si los métodos están realizados correctamente.   
+
+<img src="images/Postman.png" height="300" alt="images"/>  
 
 
 
