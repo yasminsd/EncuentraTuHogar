@@ -31,5 +31,9 @@ Diagrama de clases UML
 ![Diagrama_UML](Diagrama_UML.png)  
 ![alt text](http://https://github.com/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/to/Diagrama_UML.PNG)  
  <img src="Capturas_Pantalla/Diagrama_UML.png" height="400" alt="Capturas_Pantalla"/>
+ Si usa Markdown (README.md):
+
+
+![Alt text](/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/to/Diagrama_UML.PNG?raw=true "Optional Title")
 
 
