@@ -24,16 +24,24 @@ E-mail: y.shekh@alumnos.urjc.es
 Git: https://github.com/yasminsd/EncuentraTuHogar   
 Tablero Trello: https://trello.com/encuentra_tu_hogar 
 
-#Fase 2  
+
+Fase 2  
 Diagrama de clases UML  
-(https://raw.githubusercontent.com/yasminsd/EncuentraTuHogar/tree/main/Capturas_Pantalla/Diagrama_UML.PNG)  
-(https://raw.githubusercontent.com/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/Diagrama_UML.PNG)  
-![Diagrama_UML](Diagrama_UML.png)  
-![alt text](http://https://github.com/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/to/Diagrama_UML.PNG)  
- <img src="Capturas_Pantalla/Diagrama_UML.png" height="400" alt="Capturas_Pantalla"/>
- Si usa Markdown (README.md):
+<img src="images/DiagramaUML.png" height="500" alt="images"/>  
+Diagrama Entidad/Relación  
+<img src="images/ModeloER.png" height="500" alt="images"/>  
+Instruciones específicas para desplejar la aplicación:
+- Los requisitos para ejecutar la aplicación son :
+   - Java 11  
+   - OpenJDK Java 11  
+   - MySQL 8.0  
+- Los datos para iniciar la aplicación son:
+   -  Rol Usuario: user pass
+   -  Rol Admin: admin adminpass  
+
+Para generar el ejecutable jar es necesario compilarlo. Para ello:  
+- Seleccionamos Run As en nuestro proyecto y a continuación Maven Buid. Debemos especificar en el campo Goals "package" y se generará un archivo jar:  
 
 
-![Alt text](/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/to/Diagrama_UML.PNG?raw=true "Optional Title")
 
 
