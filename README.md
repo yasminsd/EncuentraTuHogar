@@ -28,5 +28,6 @@ Tablero Trello: https://trello.com/encuentra_tu_hogar
 Diagrama de clases UML  
 (https://raw.githubusercontent.com/yasminsd/EncuentraTuHogar/tree/main/Capturas_Pantalla/Diagrama_UML.PNG)  
 (https://raw.githubusercontent.com/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/Diagrama_UML.PNG)  
+![Screenshot](Diagrama_UML.png)
 
 
