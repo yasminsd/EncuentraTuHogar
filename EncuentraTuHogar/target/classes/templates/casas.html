@@ -1,0 +1,14 @@
+{{>header}}
+
+		<h2>Casas</h2>
+		<ul class="items">
+			{{#casas}}
+			<li><a href="/casas/{{id}}">{{localidad}}</a></li>
+			{{/casas}}
+		</ul>
+
+		{{#logged}}
+		<button onclick="location.href='/newcasa'">Nueva casa</button>
+		{{/logged}}
+
+{{>footer}}

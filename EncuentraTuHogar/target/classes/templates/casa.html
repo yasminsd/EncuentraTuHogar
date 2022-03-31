@@ -1,0 +1,31 @@
+{{>header}}
+		
+<div>
+  <h2>Casa "{{casa.catastro}}"</h2>
+  <div>
+   <label>Catastro: </label>
+   <p>{{casa.catastro}}</p>
+   <label>Habitaciones: </label>
+   <p>{{casa.habitaciones}}</p>
+   <label>Metros cuadrados: </label>
+   <p>{{casa.metros}}</p>
+   <label>Año de construccion: </label>
+   <p>{{casa.anioConstruccion}}</p>
+   <label>Precio: </label>
+   <p>{{casa.precio}}</p>
+  </div>
+  <p>
+    {{#logged}}
+    
+    	{{#admin}}
+		<button onclick="location.href='/removecasa/{{casa.id}}'">Eliminar</button>
+		{{/admin}}
+    
+    	<button onclick="location.href='/editcasa/{{casa.id}}'">Editar</button>
+    {{/logged}}
+    <br>
+    <button onclick="location.href='/'">Vover a ver todas las casas</button>
+  </p>
+  </div>		
+
+{{>footer}}
