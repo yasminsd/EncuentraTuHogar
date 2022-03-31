@@ -25,5 +25,6 @@ Git: https://github.com/yasminsd/EncuentraTuHogar
 Tablero Trello: https://trello.com/encuentra_tu_hogar 
 
 #Fase 2  
-Diagrama de clases UML
+Diagrama de clases UML  
+(https://github.com/yasminsd/EncuentraTuHogar/blob/main/Im%C3%A1genes/Diagrama_UML.PNG)
 
