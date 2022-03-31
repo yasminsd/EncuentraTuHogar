@@ -41,8 +41,18 @@ Instruciones específicas para desplejar la aplicación:
 
 Para generar el ejecutable jar es necesario compilarlo. Para ello:  
 - Seleccionamos Run As en nuestro proyecto y a continuación Maven Buid. Debemos especificar en el campo Goals "package" y se generará un archivo jar:    
-<img src="images/JAR.png" height="500" alt="images"/>  
+<img src="images/JAR.png" height="300" alt="images"/>  
 
+Ejecutamos el archivo jar ubicado en la carpeta target de nuestro proyecto y la aplicación entrará en funcionamiento.  
+  
+Para comprobar que la base de datos MySQL se ha conectado con Spring Boot he utilizado la aplicación MySQL Workbench versión 8.0:   
+<img src="images/MySQLWotkbench.png" height="300" alt="images"/>   
+Con esta aplicación, he comprobado si la aplicación Spring Boot se conectaba o no a la basae de datos de MySQL visualizando las tablas generadas:  
+<img src="images/TablaUsuario.png" height="300" alt="images"/>   
+<img src="images/TablaAnuncio.png" height="300" alt="images"/>   
+<img src="images/TablaCasa.png" height="300" alt="images"/>   
+<img src="images/TablaCompra.png" height="300" alt="images"/>   
+<img src="images/TablaVenta.png" height="300" alt="images"/> 
 
 
 
