@@ -29,6 +29,6 @@ Diagrama de clases UML
 (https://raw.githubusercontent.com/yasminsd/EncuentraTuHogar/tree/main/Capturas_Pantalla/Diagrama_UML.PNG)  
 (https://raw.githubusercontent.com/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/Diagrama_UML.PNG)  
 ![Diagrama_UML](Diagrama_UML.png)  
-![alt text](http://url/to/img.png)
+![alt text](http://https://github.com/yasminsd/EncuentraTuHogar/blob/main/Capturas_Pantalla/to/Diagrama_UML.PNG)
 
 
