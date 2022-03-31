@@ -40,7 +40,9 @@ Instruciones específicas para desplejar la aplicación:
    -  Rol Admin: admin adminpass  
 
 Para generar el ejecutable jar es necesario compilarlo. Para ello:  
-- Seleccionamos Run As en nuestro proyecto y a continuación Maven Buid. Debemos especificar en el campo Goals "package" y se generará un archivo jar:  
+- Seleccionamos Run As en nuestro proyecto y a continuación Maven Buid. Debemos especificar en el campo Goals "package" y se generará un archivo jar:    
+<img src="images/JAR.png" height="500" alt="images"/>  
+
 
 
 
