@@ -22,4 +22,8 @@ Nombre: Yasmin
 Apellidos: Shekh Liébana  
 E-mail: y.shekh@alumnos.urjc.es  
 Git: https://github.com/yasminsd/EncuentraTuHogar   
-Tablero Trello: https://trello.com/encuentra_tu_hogar
+Tablero Trello: https://trello.com/encuentra_tu_hogar 
+
+#Fase 2
+Diagrama de clases UML
+
