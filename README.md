@@ -36,8 +36,8 @@ Instruciones específicas para desplejar la aplicación:
    - OpenJDK Java 11  
    - MySQL 8.0  
 - Los datos para iniciar la aplicación son:
-   -  Rol Usuario: user pass
-   -  Rol Admin: admin adminpass  
+   -  Rol Usuario: user@user.com pass
+   -  Rol Admin: admin@admin.com adminpass  
 
 Para generar el ejecutable jar es necesario compilarlo. Para ello:  
 - Seleccionamos Run As en nuestro proyecto y a continuación Maven Buid. Debemos especificar en el campo Goals "package" y se generará un archivo jar:    
