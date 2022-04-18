@@ -1,0 +1,102 @@
+ <!DOCTYPE html>
+<html>
+
+<head>
+<title>Encuentra tu hogar</title>
+<base href=".">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+	integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+	crossorigin="anonymous">
+
+</head>
+
+<!-- 3. Display the application -->
+
+<body>
+	<nav
+		class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="navbar-nav mr-auto">
+				<a class="navbar-brand" href="/">Encuentra tu hogar</a>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+
+
+
+  <form action="anuncio/new" method="post">
+		<table class="egt">
+	
+		 <tr>
+		    
+		  	<td>
+		  	<B><h2><font size=2 face="MS Sans Serif" color="navy">ANUNCIO</font></h2></B>
+		  	</td>
+		  
+		  </tr>
+	
+	
+		  <tr>
+		    <td>Nombre:</td>
+		    <td><input type='text' name='nombre'/></td>
+		  </tr>
+		  
+		  <tr>
+		    <td>Asunto:</td>
+		    <td><input type='text' name='asunto'/></td>
+		  </tr>
+		  
+		   <tr>
+		    
+		  	<td>
+		  	<B><font size=2 face="MS Sans Serif" color="navy">CASA</font></B>
+		  	</td>
+		  
+		  </tr>
+		  
+		  <tr>
+		    <td>Casastro:</td>
+		    <td><input type='text' name='catastro'/></td>
+		  </tr>
+		  
+		  <tr>
+		    <td>Habitaciones:</td>
+		    <td><input type='text' name='habitaciones'/></td>
+		  </tr>
+		  
+		  <tr>
+		    <td>Metros:</td>
+		    <td><input type='text' name='metros'/></td>
+		  </tr>
+		  
+		  <tr>
+		    <td>Año de Construcción:</td>
+		    <td><input type='text' name='anioConstruccion'/></td>
+		  </tr>
+		  
+		  <tr>
+		    <td>Localidad:</td>
+		    <td><input type='text' name='localidad'/></td>
+		  </tr>
+		  
+		  <tr>
+		    <td>Precio:</td>
+		    <td><input type='number' name='precio'/></td>
+		  </tr>
+		  
+		</table>
+		<br>
+			<input type='submit' value='Enviar'/>
+			<input type="hidden" name="_csrf" value="{{token}}"/>
+   </form>
+   
+   <br><a href="/">Volver al tablon</a>
+</body>
+
+</html>
+	

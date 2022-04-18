@@ -12,15 +12,14 @@ public class Casa {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id = null;
+	private long id;
 
 	private String catastro;
-
-	private Integer habitaciones;
-	private Double metros;
-	private Integer anioConstruccion;
+	private int habitaciones;
+	private double metros;
+	private int anioConstruccion;
 	private String localidad;
-	private Double precio;
+	private double precio;
 	
 	@ManyToOne
 	private User propietario;
@@ -28,11 +27,13 @@ public class Casa {
 	@OneToOne
 	private Anuncio anuncio;
 
-	public Casa() {}
+	protected Casa() {}
 
-	public Casa(String catastro, Integer habitaciones, Double metros,
-			Integer anioConstruccion, String localidad, Double precio) {
+	public Casa(String catastro, int habitaciones, double metros,
+			int anioConstruccion, String localidad, double precio, User propietario) {
+		
 		super();
+		
 		this.catastro = catastro;
 		this.habitaciones = habitaciones;
 		this.metros = metros;
@@ -43,11 +44,11 @@ public class Casa {
 	}
 
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -59,27 +60,27 @@ public class Casa {
 		this.catastro = catastro;
 	}
 
-	public Integer getHabitaciones() {
+	public int getHabitaciones() {
 		return habitaciones;
 	}
 
-	public void setHabitaciones(Integer habitaciones) {
+	public void setHabitaciones(int habitaciones) {
 		this.habitaciones = habitaciones;
 	}
 
-	public Double getMetros() {
+	public double getMetros() {
 		return metros;
 	}
 
-	public void setMetros(Double metros) {
+	public void setMetros(double metros) {
 		this.metros = metros;
 	}
 
-	public Integer getAnioConstruccion() {
+	public int getAnioConstruccion() {
 		return anioConstruccion;
 	}
 
-	public void setAnioConstruccion(Integer anioConstruccion) {
+	public void setAnioConstruccion(int anioConstruccion) {
 		this.anioConstruccion = anioConstruccion;
 	}
 
@@ -91,11 +92,11 @@ public class Casa {
 		this.localidad = localidad;
 	}
 
-	public Double getPrecio() {
+	public double getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(Double precio) {
+	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
 
@@ -117,7 +118,7 @@ public class Casa {
 
 	@Override
 	public String toString() {
-		return "Casa [id=" + id + ", catastro=" + catastro + 
+		return "Casa [Catastro=" + catastro + 
 				", habitaciones=" + habitaciones +
 				", metros=" + metros +", año de construcción=" + anioConstruccion+ 
 				", localidad="+ localidad +", precio=" + precio + "]";

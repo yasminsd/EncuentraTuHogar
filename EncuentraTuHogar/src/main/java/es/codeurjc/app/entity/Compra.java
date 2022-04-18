@@ -13,14 +13,14 @@ public class Compra {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private long id;
 
 	private String fechaOferta;
 	private Double precioOferta;
 	
 
     @OneToOne 
-     private User comprador;
+    private User comprador;
     
     @OneToOne
     private User vendedor;
@@ -29,9 +29,11 @@ public class Compra {
 	private Casa casa;
 
 	
-	public Compra() {}
+	protected Compra() {}
 
 	public Compra(String fechaOferta, Double precioOferta) {
+		
+		super ();
 		this.fechaOferta = fechaOferta;
 		this.precioOferta = precioOferta;
 		this.comprador = new User();
@@ -40,11 +42,11 @@ public class Compra {
 	}
 
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -90,7 +92,7 @@ public class Compra {
 
 	@Override
 	public String toString() {
-		return "Compra [id=" + id + ", fecha oferta=" + fechaOferta + 
-				","+ " precio oferta=" + precioOferta + "]";
+		return "Compra [Fecha oferta=" + fechaOferta + 
+				","+ " precio oferta=" + precioOferta + "" + casa +"]";
 	}
 }

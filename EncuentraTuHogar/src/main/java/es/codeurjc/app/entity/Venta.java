@@ -11,7 +11,7 @@ public class Venta {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private long id;
 
 	private String fechaVenta;
 	private Double precioVenta;
@@ -25,8 +25,7 @@ public class Venta {
 	@OneToOne
 	private Casa casa;
 	    
-	public Venta() {
-	}
+	public Venta() {}
 
 	public Venta(String fechaVenta, Double precioVenta) {
 		this.fechaVenta = fechaVenta;
@@ -36,11 +35,11 @@ public class Venta {
 		this.casa = new Casa();
 	}
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -86,7 +85,7 @@ public class Venta {
 
 	@Override
 	public String toString() {
-		return "Venta [id=" + id + ", fecha venta=" + fechaVenta + 
+		return "Fecha venta=" + fechaVenta + 
 				","+ " precio venta=" + precioVenta + "]";
 	}
 

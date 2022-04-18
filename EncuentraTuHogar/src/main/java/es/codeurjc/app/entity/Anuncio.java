@@ -13,7 +13,7 @@ public class Anuncio {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+	private long id = -1;
 
 	private String nombre;
 	private String asunto;
@@ -24,8 +24,7 @@ public class Anuncio {
 	@OneToOne (cascade = CascadeType.ALL)
 	private Casa casa;
 
-	public Anuncio() {
-	}
+	public Anuncio() {}
 
 	public Anuncio(String nombre, String asunto) {
 		this.nombre = nombre;
@@ -35,11 +34,11 @@ public class Anuncio {
 	}
 
 
-	public Long getId() {
+	public long getId() {
 		return id;
 	}
 
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 
@@ -77,7 +76,7 @@ public class Anuncio {
 
 	@Override
 	public String toString() {
-		return "Anuncio [id=" + id + ", nombre=" + nombre + ", asunto=" + asunto + "]";
+		return "Anuncio [nombre=" + nombre + ", asunto=" + asunto + "]";
 	}
 
 }
