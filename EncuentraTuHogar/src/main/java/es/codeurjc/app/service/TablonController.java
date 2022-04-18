@@ -124,7 +124,7 @@ import es.codeurjc.app.repository.VentaRepository;
 			model.addAttribute("Compra", compraRepository.count());
 			model.addAttribute("venta", ventaRepository.count());
 			model.addAttribute("user", request.isUserInRole("USER"));
-			model.addAttribute("admin", request.isUserInRole("ADMIN"));
+			model.addAttribute("administrador", request.isUserInRole("ADMIN"));
 			
 			return "principal";
 		}
