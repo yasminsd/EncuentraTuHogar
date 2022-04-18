@@ -9,6 +9,8 @@ import es.codeurjc.app.entity.Casa;
 
 public interface AnuncioRepository extends JpaRepository<Anuncio, Long> {
 
+//Repositorio Anuncio que extiende de JPA
+//JPA nos permite lanzar consultas sobre esta entidad
 	
 	Anuncio save(Anuncio anuncio);
 	Anuncio findByNombre(String nombre);
@@ -16,7 +18,7 @@ public interface AnuncioRepository extends JpaRepository<Anuncio, Long> {
 	Anuncio findByAsunto(String asunto);
 	Anuncio findByNombreAndAsunto(String nombre, String asunto);
 	Anuncio findByCasa(Casa casa);
-	Page<Anuncio> findAll(Pageable page);
+	Page<Anuncio> findAll(Pageable page); //Devolver los resultados de las consultas paginados
 
 
 }

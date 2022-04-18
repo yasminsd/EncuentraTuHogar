@@ -21,9 +21,11 @@ public class Casa {
 	private String localidad;
 	private double precio;
 	
-	@ManyToOne
+	@ManyToOne //Relación de muchos a 1
 	private User propietario;
 	
+	
+	//Relación 1:1 y ambos objetos de la relación tienen el mismo ciclo de vida
 	@OneToOne
 	private Anuncio anuncio;
 

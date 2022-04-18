@@ -6,19 +6,17 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 
-
-
 @Entity
 public class Compra {
 
-	@Id
+	@Id 
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
 	private String fechaOferta;
 	private Double precioOferta;
 	
-
+	//Relación 1:1 y ambos objetos de la relación tienen el mismo ciclo de vida
     @OneToOne 
     private User comprador;
     

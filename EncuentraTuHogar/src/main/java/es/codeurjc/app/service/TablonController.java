@@ -47,8 +47,7 @@ import es.codeurjc.app.repository.VentaRepository;
 		@PostConstruct
 		public void init() {
 			
-			/*Rellenamos la base con un administrador, dos usuarios que venden y un usuario que va a realizar la compra*/
-			
+			//Insertamos un administrador y cuatro usuarios
 			
 			User u1 = new User("user","pass","03122836B","user@user.com","ROLE_USER");
 			User u2 = new User("jrperez","jrperezpass","25786524L","jrperez@gmail.com","ROLE_USER");
@@ -63,16 +62,15 @@ import es.codeurjc.app.repository.VentaRepository;
 			Casa c2 = new Casa("HYTECJDTWO",5 , 325.25, 2005, "Burgos", 300000.0, u2);
 			
 			
-			/*Persisto a  los usuarios*/
-			
-
+			/*Persisto usuarios*/
+		
 			usuarioRepository.save(u1);
 			usuarioRepository.save(u2);
 			usuarioRepository.save(u3);
 			usuarioRepository.save(u4);
 			usuarioRepository.save(u5);
 			
-	        /*Persisto las casas */
+	        /*Persisto casas */
 			
 			casaRepository.save(c1);
 			casaRepository.save(c2);
@@ -108,18 +106,15 @@ import es.codeurjc.app.repository.VentaRepository;
 			anuncioRepository.save(a1);
 			anuncioRepository.save(a2);
 			
-			
 		}
 		
 
 		@RequestMapping("/")
 		public String tablon(Model model, Pageable page, HttpServletRequest request) {
 
-			//String nombre = request.getUserPrincipal().getName();
 			model.addAttribute("anuncios", anuncioRepository.findAll(page));
 			model.addAttribute("usuarios", usuarioRepository.findAll(page));
 			model.addAttribute("usuariosCounter", usuarioRepository.count());
-			//model.addAttribute("usuarios",usuarioRepository.findByEmail(nombre));
 			model.addAttribute("casas", casaRepository.count());
 			model.addAttribute("Compra", compraRepository.count());
 			model.addAttribute("venta", ventaRepository.count());
@@ -142,8 +137,11 @@ import es.codeurjc.app.repository.VentaRepository;
 
 		@RequestMapping("/anuncio/new")
 		public String nuevoAnuncio(Model model, @RequestParam String nombre, 
-				@RequestParam String asunto,@RequestParam String catastro,@RequestParam int habitaciones,
-				@RequestParam double metros,@RequestParam int anioConstruccion,@RequestParam String localidad, 
+				//Parámetro con el valor del campo de texto del formulario
+				@RequestParam String asunto,@RequestParam String catastro,
+				@RequestParam int habitaciones,
+				@RequestParam double metros,@RequestParam int anioConstruccion,
+				@RequestParam String localidad, 
 				@RequestParam double precio,HttpServletRequest request) {
 
 			User u = usuarioRepository.findByName(request.getUserPrincipal().getName());
@@ -163,6 +161,7 @@ import es.codeurjc.app.repository.VentaRepository;
 			return "anuncio_saved";
 
 		}
+		
 		
 		@RequestMapping("/usuario/new")
 		public String nuevoUsuario(Model model,@RequestParam String name,@RequestParam String password,  
@@ -188,6 +187,9 @@ import es.codeurjc.app.repository.VentaRepository;
 		@RequestMapping("/anuncio/{id}")
 		public String verAnuncio(Model model, @PathVariable long id) {
 			
+			//Con @PathVarible, la información también se pueden incluir como 
+			//parte de la propia URL, en vez de cómo parámetros
+			
 			Anuncio anuncio = anuncioRepository.findById(id);
 			Casa casa = anuncio.getCasa();
 			model.addAttribute("anuncio", anuncio);
@@ -198,7 +200,6 @@ import es.codeurjc.app.repository.VentaRepository;
 		@RequestMapping("/usuario/{id}")
         public String verUsuario(Model model, @PathVariable long id) {
 			
-			//model.addAttribute("user", usuarioRepository.findAll(page));
 			User usuario = usuarioRepository.findById(id);
 			model.addAttribute("usuarios", usuario);
 			
@@ -209,9 +210,7 @@ import es.codeurjc.app.repository.VentaRepository;
         public String listaUsuario(Model model, Pageable page, HttpServletRequest request) {
 			
 			model.addAttribute("usuarios", usuarioRepository.findAll(page));
-			//model.addAttribute("usuarios", usuarioRepository.findAll(page));
-			//User usuario = usuarioRepository.findById(id);
-			//model.addAttribute("usuarios",usuario);
+
 			return "listaUsuarios";
 		}
 		
@@ -233,7 +232,6 @@ import es.codeurjc.app.repository.VentaRepository;
 			ventaRepository.save(venta);
 			
 			//Borramos Anuncio
-
 			Anuncio anu = anuncioRepository.findByCasa(casa);
 			anuncioRepository.deleteById(anu.getId());
 			
@@ -248,7 +246,9 @@ import es.codeurjc.app.repository.VentaRepository;
 		
 		
 		@RequestMapping("/anuncio/oferta")
-		public String nuevosAnuncio(Model model, @RequestParam String fechaOferta, @RequestParam double precioOferta, @RequestParam long id,HttpServletRequest request ) {
+		public String nuevosAnuncio(Model model, @RequestParam String fechaOferta, 
+				@RequestParam double precioOferta, @RequestParam long id,
+				HttpServletRequest request ) {
 
 			Compra ofer = new Compra(fechaOferta, precioOferta);
 			Casa casa3 = casaRepository.findById(id);
@@ -269,7 +269,8 @@ import es.codeurjc.app.repository.VentaRepository;
 	
 		
 		@RequestMapping(value="/delete/usuario", method=RequestMethod.POST)
-		public String eliminarUsuario (Model model,  @RequestParam (value="dni") String dni, Pageable page)
+		public String eliminarUsuario (Model model,  @RequestParam (value="dni")
+			String dni, Pageable page)
 		{
 			List<User> user = usuarioRepository.findByDni(dni);
 			model.addAttribute("usuarios", usuarioRepository.findAll(page));
@@ -292,9 +293,7 @@ import es.codeurjc.app.repository.VentaRepository;
 
 			return "anuncio_eliminado";
 			
-		}
-		
-		
+		}	
 	
 }
 	

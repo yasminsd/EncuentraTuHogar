@@ -18,12 +18,15 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.annotation.SessionScope;
 
-//import es.urjc.code.teVendoLaMoto.Anuncio;
-//import es.urjc.code.teVendoLaMoto.Venta;
-
 
 @Entity
+
+//Esta en la jerarquía superior con @Repository, @Controller, @Service
+//Permite anotar un bean para que Sprint lo considere un de sus objetos
 @Component
+
+/*Cuando se visita la página por primera vez se incia la sesión. 
+Cualquier página que se abra dentro del mismo navegador comparte la sesión*/
 @SessionScope
 public class User {
 
@@ -36,19 +39,26 @@ public class User {
 	private String dni;
 	private String email;
 	
+	
+	//El atributo mappedBy define el objeto al que pertenece la relación
+	//y es obligatorio si la relación es bidireccional
 	@OneToMany (mappedBy="usuario")
 	private List<Anuncio> anuncio;
 	
 	@OneToMany (mappedBy="propietario")
 	private List<Casa> casa;
 	
-	@OneToOne(cascade = CascadeType.ALL)
+	@OneToOne(cascade = CascadeType.ALL) //ambos objetos de la relación tienen el mismo ciclo de vida
 	private Venta venta;
 	
 	@OneToOne(cascade= {CascadeType.PERSIST, CascadeType.REMOVE}, fetch=FetchType.EAGER)
 	private Compra compra;
 
-	@ElementCollection(fetch = FetchType.EAGER)
+	
+	//Significa que la colección no es una colección de entidades, sino una colección de tipos simples
+	@ElementCollection(fetch = FetchType.EAGER) //Roles del usuario Admin y o User
+	//La relación debe ser cargada al momento de cargar la entidad (Ansioso EAGER)
+	
 	private List<String> roles;
 
 	public User() {}

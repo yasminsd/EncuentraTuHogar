@@ -1,6 +1,7 @@
 package es.codeurjc.app.security;
 
 import java.util.ArrayList;
+
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,15 @@ import org.springframework.stereotype.Component;
 
 import es.codeurjc.app.entity.User;
 import es.codeurjc.app.repository.UserRepository;
+
+
+//Usuarios cargados en BBDD
+//Si existe y la contraseña es correcta devolvemos un objeto con los roles
+
+
+//Se encarga de instanciar todos nuestros objetos y por lo tanto actua como una 
+//super Factoria que construye objetos
+
 @ComponentScan
 @Component
 public class UserRepositoryAuthenticationProvider implements AuthenticationProvider {
