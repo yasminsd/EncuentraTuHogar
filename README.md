@@ -81,7 +81,7 @@ La idea es levantar los siguientes procesos:
 Para crear la máuina virtual e instalar Ubunto en ella necesitamos ir desarrollando los siguientes pasos: 
 1. Descargar e instalar Virtual Box 
    www.virtualbox.org 
-2. Crear una máquina virtual 
+3. Crear una máquina virtual 
    Requerimientos mínimos (Virtualizados) 
    - 2 GHz single core processor 
    - 2 GB RAM (system Memory) 
@@ -89,6 +89,8 @@ Para crear la máuina virtual e instalar Ubunto en ella necesitamos ir desarroll
    Controlador de pantalla: VMSVGA
 3. Descargar Ububto 20.04 e instalarlo en la máquina virtual creada 
    https://ububtu.com 
+   
+
    
 
  
