@@ -92,9 +92,35 @@ Para crear la máuina virtual e instalar Ubunto en ella necesitamos ir desarroll
    
  
 Una vez creada la MV tenemos que configurar los siguientes procesos: 
-- Instalar y configurar HAproxy.  
-<img src="images/Instalacion_haproxy.png" height="300" alt="images"/> 
+- Instalar y configurar HAproxy.   
+$ sudo apt -get update 
+$ sudo apt -get -y install haproxy
 
+Y configurar el archivo que está ubucado en /etc/haproxy
+
+<img src="images/Instalacion_haproxy.PNG" height="600" alt="images"/>  
+
+- Instalar Msql y creación de BBDD.  
+$ sudo apt install mysql-client-core-8.0  
+$ sudo apt install mysql-server 
+
+<img src="images/Instalacion_mysql.PNG" height="600" alt="images"/>   
+
+Creación de BBDD. 
+$ sudo mysql -h localhost -u root -p 
+
+Usuario: hogar@ Pass: 1234$  
+
+<img src="images/Crear_bbdd.PNG" height="600" alt="images"/>  
+
+Comprobación de acceso a BBDD con usuario 
+
+<img src="images/Comprobación acceso a bbdd con usuario.PNG" height="600" alt="images"/>  
+
+- Arrancar la aplicación   
+$ java -jar EncuentraTuHogar-0.0.1-SNAPSHOT.jar 
+
+ 
 
    
 
