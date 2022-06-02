@@ -76,7 +76,21 @@ Para realizar el despliegue de la aplicación vamos a utilizar una máquina virt
 La idea es levantar los siguientes procesos: 
 - Una instancia del balanceador de carga (HAproxy) 
 - Dos instancias de la aplicación web 
-- La base de datos 
+- La base de datos  
+
+Para crear la máuina virtual e instalar Ubunto en ella necesitamos ir desarrollando los siguientes pasos: 
+1. Descargar e instalar Virtual Box 
+   www.virtualbox.org 
+2. Crear una máquina virtual 
+   Requerimientos mínimos (Virtualizados) 
+   - 2 GHz single core processor 
+   - 2 GB RAM (system Memory) 
+   - 10 GB de espacio de disco 
+   Controlador de pantalla: VMSVGA
+3. Descargar Ububto 20.04 e instalarlo en la máquina virtual creada 
+   https://ububtu.com 
+   
+
  
 
 
