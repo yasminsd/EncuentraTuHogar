@@ -72,8 +72,12 @@ Otra herramienta que he utilizado, sobre todo al principio, es Postman con la qu
 En esta última fase vamos a utilizar balanceadores de carga para que pueda tener múltiples servidores.
 El balanceador de carga va a estar escuchando en una IP en el puerto 80.
 
-Para realizar el despliegue de la aplicación vamos a utilizar una máquina virtual.
-La idea es levantar los siguientes procesos:
+Para realizar el despliegue de la aplicación vamos a utilizar una máquina virtual. 
+La idea es levantar los siguientes procesos: 
+- Una instancia del balanceador de carga (HAproxy) 
+- Dos instancias de la aplicación web 
+- La base de datos 
+ 
 
 
 
