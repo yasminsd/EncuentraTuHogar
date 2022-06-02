@@ -90,6 +90,11 @@ Para crear la máuina virtual e instalar Ubunto en ella necesitamos ir desarroll
 3. Descargar Ububto 20.04 e instalarlo en la máquina virtual creada 
    https://ububtu.com 
    
+ 
+Una vez creada la MV tenemos que configurar los siguientes procesos: 
+- Instalar y configurar HAproxy.  
+<img src="images/Instalacion_haproxy.png" height="300" alt="images"/> 
+
 
    
 
