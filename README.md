@@ -93,7 +93,7 @@ Para crear la máuina virtual e instalar Ubunto en ella necesitamos ir desarroll
  
 Una vez creada la MV tenemos que configurar los siguientes procesos: 
 - Instalar y configurar HAproxy.   
-$ sudo apt -get update 
+$ sudo apt -get update  
 $ sudo apt -get -y install haproxy
 
 Y configurar el archivo que está ubucado en /etc/haproxy
