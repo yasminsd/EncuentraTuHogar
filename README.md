@@ -98,7 +98,7 @@ $ sudo apt -get -y install haproxy
 
 Y configurar el archivo que está ubucado en /etc/haproxy
 
-<img src="images/Instalacion_haproxy.PNG" height="600" alt="images"/> 
+<img src="images/configuracion_haproxy.PNG" height="600" alt="images"/> 
 
 Una vez configurado debemos reiniciar el servicio con: 
 
