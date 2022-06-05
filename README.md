@@ -98,7 +98,13 @@ $ sudo apt -get -y install haproxy
 
 Y configurar el archivo que está ubucado en /etc/haproxy
 
-<img src="images/Instalacion_haproxy.PNG" height="600" alt="images"/>  
+<img src="images/Instalacion_haproxy.PNG" height="600" alt="images"/> 
+
+Una vez configurado debemos reiniciar el servicio con: 
+
+$service haproxy restart
+
+Se configurará el equilibrio del balanceador de carga de HAProxy.
 
 - Instalar Msql y creación de BBDD.  
 $ sudo apt install mysql-client-core-8.0  
