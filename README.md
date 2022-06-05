@@ -107,7 +107,6 @@ $service haproxy restart
 Se configurará el equilibrio del balanceador de carga de HAProxy.
 
 - Instalar Mysql y creación de BBDD.  
-$ sudo apt install mysql-client-core-8.0  
 $ sudo apt install mysql-server 
 
 <img src="images/Instalacion_mysql.PNG" height="600" alt="images"/>   
