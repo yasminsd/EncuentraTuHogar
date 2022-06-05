@@ -115,7 +115,7 @@ Usuario: hogar@ Pass: 1234$
 
 Comprobación de acceso a BBDD con usuario 
 
-<img src="images/Comprobación acceso a bbdd con usuario.PNG" height="600" alt="images"/>  
+<img src="images/Comprobación acceso a BBDD con usuario.PNG" height="600" alt="images"/>  
 
 - Arrancar la aplicación   
 $ java -jar EncuentraTuHogar-0.0.1-SNAPSHOT.jar 
